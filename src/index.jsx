@@ -46,7 +46,7 @@ subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider store={store}>
       <Routes>
-        <Route path={`${ROUTES.Detail.HOME}/*`} element={<StudioHeaderWrapper />} />
+        <Route path={ROUTES.Detail.HOME} element={<StudioHeaderWrapper />} />
         <Route path="*" element={<StudioHeaderWrapper />} />
       </Routes>
       <Routes>
@@ -62,7 +62,7 @@ subscribe(APP_READY, () => {
           <Route path={ROUTES.Detail.EDIT} element={<LibraryEditPage />} />
           <Route path={ROUTES.Detail.ACCESS} element={<LibraryAccessPage />} />
           <Route path={ROUTES.Detail.IMPORT} element={<CourseImportPage />} />
-          <Route path={`${ROUTES.Block.HOME}/*`} element={<LibraryBlockPage />} />
+          <Route path={`${ROUTES.Block.HOME}`} element={<LibraryBlockPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
